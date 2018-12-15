@@ -14,8 +14,9 @@ var LessAutoprefix = require('less-plugin-autoprefix');
 var autoprefix = new LessAutoprefix({ browsers: ["last 2 versions", "> 5%", "not ie < 8"] });
 
 //just a test
-gulp.task('default', function(){
-  return console.log("OK");
+gulp.task('default', function(done){
+  console.log("OK");
+  done();
 });
 
 //pug to html conversion
