@@ -58,5 +58,11 @@ gulp.task('imagemin',function(){
   .pipe(gulp.dest("dist/images"));
 });
 
+gulp.task('imagecopy',function(){
+  return gulp.src("app/images/*")
+  .pipe(changed("dist/images"))//pipe files only if changed 
+  .pipe(gulp.dest("dist/images"));
+});
+
 //a combination of all tasks
 //gulp.task('build',function(){}

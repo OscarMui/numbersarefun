@@ -5,16 +5,47 @@ html
 
         include partials/meta.pug
 
+        - var bg_color = "#F4C0AF";
         style.
-            .jumbotron{
-                background-color:#F4C0AF;
+            #header{
+                background-color: #{bg_color};
             }
             body{
-                background-color:#F4C0AF;
+                background-color: #{bg_color};
+            }
+            #main{
+                background-color:#FFF;
             }
     body
-        include partials/header.pug
-        
-    p.
-        Solar year is the most significant measure of time, it is the time for the Earth to make one complete rotation of the Sun, the exact time is approximately 365.2421895134 days.\n
-        Number of days in a calendar year is set according to the solar year so that it can be used for regulating everyday life and benefit farming because they can know the exact time to plant.
+            include partials/header.pug
+            .container
+                .jumbotron#main.pt-2.pb-1
+                    p.lead.
+                        Solar year is the most significant measure of time, it is the time for the Earth to make one complete rotation of the Sun, the exact time is approximately 365.2421895134 days. <br />
+                        Number of days in a calendar year is set according to the solar year so that it can be used for regulating everyday life and benefit farming because they can know the exact time to plant.
+                    h2 Common Year
+                    .row
+                        .col-xl-10.col-lg-10.col-md-9.col-sm-6.col-xs-12
+                            p.
+                                A common calendar year is 365 days.
+                            br
+                            p.
+                                MATH: <br />
+                                Difference compared with the solar year: <br />
+                                365.2422 (correct to 4 d.p.) - 365 <br />
+                                = 0.2422 (days)
+                        .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-xs-12
+                            img(src="images/common_year.png" alt="calender")
+                    h2 Leap Year
+                    p.
+                        In order to make it more accurate, people introduced the concept of leap year. Years with a multiple of 4 will be a leap year with 366 days.
+                    br
+                    p.
+                        MATH:<br />
+                        Average days in a year:<br />
+                        (365+365+365+366)÷4<br />
+                        =365.25 (days)<br />
+                        Difference compared with the solar year:<br />
+                        365.25 - 365.2422 (correct to 4 d.p.)<br />
+                        = 0.0078 (days)
+
