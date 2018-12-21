@@ -9,7 +9,7 @@ function getActive() {
     console.log(item.href);
     console.log(window.location.pathname);
 
-    if (item.href == window.location.pathname) {
+    if (item.href == window.location.href) {
       item.classList.add("active");
     }
   });
