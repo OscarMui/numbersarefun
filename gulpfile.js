@@ -40,7 +40,7 @@ gulp.task('less', function(){
 //optimise js
 gulp.task('js',function(){
   return gulp.src("app/script/*.js")
-  .pipe(changed("dist/js"))//pipe files only if changed 
+  //.pipe(changed("dist/js"))//pipe files only if changed 
   .pipe(eslint({
     configFile: '.eslintrc'
   }))//eslint: check if js has any errors
