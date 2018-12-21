@@ -18,16 +18,20 @@
     <!--icon-->
     <link rel="shortcut icon" type="image/png" href="images/icon.png">
     <!--other metas-->
+    <!--in line css code-->
     <style>
-      .jumbotron{
-          background-color:#E2B1FA;
+      #header{
+          background-color: #E2B1FA;
       }
       body{
-          background-color:#E2B1FA;
+          background-color: #E2B1FA;
+      }
+      #main{
+          background-color:#FFF;
       }
     </style>
   </head>
-  <body>
+  <body onload="getActive()">
     <div class="container">
       <div class="jumbotron pb-0" id="header">
         <h1><a style="color:#555" href="index.html">Numbers are fun (Remix)</a></h1>
@@ -46,6 +50,20 @@
         </div>
       </div>
     </div>
-    <p>coming very soon...</p>
+    <div class="container">
+      <div class="jumbotron pt-2 pb-1 mb-0" id="main">
+        <p>coming very soon...</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="jumbotron py-1 mt-0 bg-dark text-light" id="footer">
+        <p>
+          Original website: <a href="https://oscarmui1127.wixsite.com/numbersarefun/" style="color:#FFF">https://oscarmui1127.wixsite.com/numbersarefun/</a><br />
+          &copy; 2017 by members of SJC 2016-17 2E Maths Project Group 2 <br />
+          Remixed by Oscar Mui &copy; 2018-2019<br />
+          Last update: 21 Dec 2018
+        </p>
+      </div>
+    </div>
   </body>
 </html>

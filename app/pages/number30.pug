@@ -2,16 +2,11 @@ doctype html
 html
     head
         title 30
-
+        - var bg_color = "#E2B1FA";
         include partials/meta.pug
-
-        style.
-            .jumbotron{
-                background-color:#E2B1FA;
-            }
-            body{
-                background-color:#E2B1FA;
-            }
-    body
+    body(onload="getActive()")
         include partials/header.pug
-        p coming very soon...
+        .container
+            .jumbotron#main.pt-2.pb-1.mb-0
+                p coming very soon...
+        include partials/footer.pug

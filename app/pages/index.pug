@@ -2,18 +2,10 @@ doctype html
 html
     head
         title Numbers Are Fun
-
+        - var bg_color="#BAE9FF";
         include partials/meta.pug
-
-        script(type="text/javascript" src="js/test.js")
-        style.
-            .jumbotron{
-                background-color:#BAE9FF;
-            }
-            body{
-                background-color:#BAE9FF;
-            }
-    body
+    body(onload="getActive()")
         include partials/header.pug
         .container
             img(src="images/carousel1.png" alt="Numbers").w-100
+        include partials/footer.pug
