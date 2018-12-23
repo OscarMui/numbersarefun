@@ -1,7 +1,10 @@
+- var link = "https://oscarmui1127.wixsite.com/numbersarefun/";
 .container
     #footer.jumbotron.py-1.mt-0.bg-dark.text-light
-        p.
-            Original website: <a href="https://oscarmui1127.wixsite.com/numbersarefun/" style="color:#FFF">https://oscarmui1127.wixsite.com/numbersarefun/</a><br />
-            &copy; 2017 by members of SJC 2016-17 2E Maths Project Group 2 <br />
-            Remixed by Oscar Mui &copy; 2018-2019<br />
-            Last update: 21 Dec 2018
+        div(style="display: inline-block;")
+            a(href="https://oscarmui1127.wixsite.com/numbersarefun/" style="color:#FFF;") Original website
+            //a(href=#{link} class="d-none d-sm-block" style="color:#FFF;"): #{link}
+            p.
+                &copy; 2017 by members of SJC 2016-17 2E Maths Project Group 2 <br />
+                Remixed by Oscar Mui &copy; 2018-2019<br />
+                Last update: 23 Dec 2018

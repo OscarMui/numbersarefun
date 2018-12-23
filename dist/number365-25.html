@@ -71,15 +71,20 @@
         </div><br class="visible-xs">
         <h2>Leap Year</h2>
         <p>In order to make it more accurate, people introduced the concept of leap year. Years with a multiple of 4 will be a leap year with 366 days.</p><br>
-        <p>
-          MATH:<br />
-          Average days in a year:<br />
-          (365+365+365+366)÷4<br />
-          =365.25 (days)<br />
-          Difference compared with the solar year:<br />
-          365.25 - 365.2422 (correct to 4 d.p.)<br />
-          = 0.0078 (days)
-        </p>
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-xs-12">
+            <p>
+              MATH:<br />
+              Average days in a year:<br />
+              (365+365+365+366)÷4<br />
+              =365.25 (days)<br />
+              Difference compared with the solar year:<br />
+              365.25 - 365.2422 (correct to 4 d.p.)<br />
+              = 0.0078 (days)
+            </p>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12"><img class="w-100" src="images/leap_year.jpg" alt="month"></div>
+        </div>
         <h2>Even More Accurate</h2>
         <p>
           But it is not accurate enough.<br />
@@ -121,12 +126,14 @@
     </div>
     <div class="container">
       <div class="jumbotron py-1 mt-0 bg-dark text-light" id="footer">
-        <p>
-          Original website: <a href="https://oscarmui1127.wixsite.com/numbersarefun/" style="color:#FFF">https://oscarmui1127.wixsite.com/numbersarefun/</a><br />
-          &copy; 2017 by members of SJC 2016-17 2E Maths Project Group 2 <br />
-          Remixed by Oscar Mui &copy; 2018-2019<br />
-          Last update: 21 Dec 2018
-        </p>
+        <div style="display: inline-block;"><a href="https://oscarmui1127.wixsite.com/numbersarefun/" style="color:#FFF;">Original website</a>
+          <!--a(href=#{link} class="d-none d-sm-block" style="color:#FFF;"): #{link}-->
+          <p>
+            &copy; 2017 by members of SJC 2016-17 2E Maths Project Group 2 <br />
+            Remixed by Oscar Mui &copy; 2018-2019<br />
+            Last update: 23 Dec 2018
+          </p>
+        </div>
       </div>
     </div>
   </body>

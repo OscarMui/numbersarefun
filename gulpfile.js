@@ -66,3 +66,5 @@ gulp.task('imagecopy',function(){
 
 //a combination of all tasks
 //gulp.task('build',function(){}
+
+gulp.task('tempbuild',gulp.series('js','pug','less','imagecopy'));
