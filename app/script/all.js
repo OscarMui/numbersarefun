@@ -1,5 +1,5 @@
 console.log("js file get");
-function getActive(){
+function getActive(){ //set the active element of the navbar
     let html_navbars = [document.getElementById("html_navbar0"),
         document.getElementById("html_navbar1"),
         document.getElementById("html_navbar2"),
@@ -8,7 +8,6 @@ function getActive(){
         document.getElementById("html_navbar5")
     ];
     html_navbars.forEach(function(item,index){
-        console.log(item);
         console.log(item.href);
         console.log(window.location.pathname);
         if(item.href==window.location.href){
