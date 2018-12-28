@@ -7,5 +7,23 @@ html
     body(onload="getActive()")
         include partials/header.pug
         .container
-            img(src="images/carousel1.png" alt="Numbers").w-100
+            #indexCarousel(class = "carousel slide" data-ride="carousel")
+                ol.carousel-indicators
+                    li(data-target="#indexCarousel" data-slide-to="0").active
+                    li(data-target="#indexCarousel" data-slide-to="1")
+                    li(data-target="#indexCarousel" data-slide-to="2")
+                .carousel-inner
+                    .carousel-item.active
+                        img(src="images/carousel0.jpg" alt="Numbers").w-100.d-block
+                    .carousel-item
+                        a(href="number11.html"): img(src="images/carousel1.png" alt="Question 1: Fill 1-6 into the following triangle so that the sum of all three sides equal to 11.").w-100.d-block
+                    .carousel-item
+                        a(href="number365-25.html"): img(src="images/carousel2.png" alt="How many days are there from year 2001 to 2100?").w-100.d-block
+                a.carousel-control-prev(href="#indexCarousel" role="button" data-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.sr-only Previous
+                a.carousel-control-next(href="#indexCarousel" role="button" data-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.sr-only Next
+
         include partials/footer.pug
