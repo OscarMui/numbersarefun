@@ -7,7 +7,7 @@ html
     body(onload="getActive()")
         include partials/header.pug
         .container
-            #indexCarousel(class = "carousel slide" data-ride="carousel")
+            #indexCarousel(class = "carousel slide" data-ride="carousel" data-interval="3500" data-pause="false")
                 ol.carousel-indicators
                     li(data-target="#indexCarousel" data-slide-to="0").active
                     li(data-target="#indexCarousel" data-slide-to="1")
