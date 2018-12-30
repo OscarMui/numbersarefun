@@ -1,7 +1,7 @@
 # Numbers Are Fun
 
 SITE HOSTED ON: [https://numbersarefun.netlify.com/](https://numbersarefun.netlify.com/)
-ORIGINAL SITE: ([https://oscarmui1127.wixsite.com/numbersarefun/]https://numbersarefun.netlify.com/)
+ORIGINAL SITE: ([https://oscarmui1127.wixsite.com/numbersarefun/](https://numbersarefun.netlify.com/))
 
 This is a remix of my math project in form 2, using new techniques and real code instead of wix
 
