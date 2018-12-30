@@ -11,7 +11,7 @@ html
                 h2 About the remix
                 h3 Background
                 p.lead.
-                    The original website was made when I was in form 2 for my math project at school. Due to a lack of time, I decided to make it with Wix. However, currently, I have learnt some new web development techniques so I decided to rewrite the web again to consolidate what I have learnt.
+                    The original website was made when I was in form 2 for my math project at school. Due to a lack of time, I decided to make it with Wix. However, currently, I have learnt some new web development techniques so I decided to rewrite the web again to test out what I have learnt.
                 a.lead(href="https://oscarmui1127.wixsite.com/numbersarefun") Original Website: https://oscarmui1127.wixsite.com/numbersarefun
                 h3 Development details
                 p.
@@ -19,17 +19,25 @@ html
                     Except it's not that old school, it uses Gulp to manage the dev env and dist build, uses Pug for html templating, LESS for CSS, and capable of compiling ES7 to Javascript, too. In production mode (dist build), assets are bundled, minified, and revved to speed up loading and allow usage of server cache.<br />
                     Lastly, BootstrapV4 is included for css scaffolding.
                 h2 About the project
-                h3 Project information
-                p.
-                    We are students from St. Joseph's College, this is the website of our maths project.<br />
-                    In this project, we are required to find a reference book (The Book of Numbers), choose several interesting sections (9, 11, 30, 365.25) to form our project, and then show to our classmates the information and the things we could learn from them. Please see our website and you will see the very wonderful maths knowledge which we have chosen for you. Enjoy!
+                .row
+                    .col-xl-8.col-lg-8.col-md-6.col-sm-12.col-12
+                        h3 Project information
+                        p.
+                            We are students from St. Joseph's College, this is the website of our maths project.<br />
+                            In this project, we are required to find a reference book (The Book of Numbers), choose several interesting sections (9, 11, 30, 365.25) to form our project, and then show to our classmates the information and the things we could learn from them. Please see our website and you will see the very wonderful maths knowledge which we have chosen for you. Enjoy!
+                    .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+                        img(src="images/cover.png" alt="Cover page for our report").mw-100.mx-auto.d-block
                 h3 Reference book
-                h5 Book name: The Book of numbers
-                p.
-                    Author: Tim Glynne-Jones<br />
-                    Publisher: Arcturus Publishing Limited
-                h5 Project name: "Numbers are Fun!"
-                h5 Topics chosen: 9, 11, 30, 365.25
+                .row
+                    .col-xl-9.col-lg-9.col-md-6.col-sm-12.col-12
+                        p.lead Book name: The Book of numbers
+                        p.
+                            Author: Tim Glynne-Jones<br />
+                            Publisher: Arcturus Publishing Limited
+                        p.lead Project name: "Numbers are Fun!"
+                        p.lead Topics chosen: 9, 11, 30, 365.25
+                    .col-xl-3.col-lg-3.col-md-6.col-sm-12.col-12
+                        img(src="images/book.jpg" alt="Cover page for our report").mw-100.mx-auto.d-block
                 h3 Other references
                 h4 Websites:
                 ol

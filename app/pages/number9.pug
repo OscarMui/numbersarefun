@@ -8,5 +8,47 @@ html
         include partials/header.pug
         .container
             .jumbotron#main.pt-2.pb-1.mb-0
-                p coming very soon...
+                .row
+                    .col-xl-10.col-lg-10.col-md-8.col-sm-6.col-12
+                        p.lead In Chinese culture, 9 is a special number. What does it represent? It represents longevity.  Mathematically, 9 is the square root of 81 and square of 3.Now is the magic time of the most mysterious number 9.
+                    .col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
+                        img(src="images/nine.png" alt="9").mw-100.mx-auto.d-block
+                h2 MAGIC 1
+                p.
+                    The digits of all multiples of 9 add up to 9 or a multiple of 9. <br />
+                    If you keep adding them until you only have one digit, it will always be 9.
+                p.
+                    9*9=81 &nbsp; (8+1=9)
+                    9*137=1233 &nbsp; (1+2+3+3=9)
+                    9*3641=32769 &nbsp; (3+2+7+6+9=27, then 2+7=9)
+                h2 MAGIC 2
+                p.
+                    Take any three digit number, invert it and subtract the smaller number to form the larger number. The tens digit will always be 9. <br />
+                    Look!!!! Is magic time!!!!
+                p.
+                    542-245=297 (9 is the tens digit)<br />
+                    861-168=693 (9 is the tens digit)<br />
+                    954-459=495 (9 is the tens digit)
+                
+                p Do you know why? Let's do the subtraction in general!
+                p.
+                    abc-cba (a&gt;c)<br />
+                    =100a+10b+c-100c-10b-a<br />
+                    =99(a-c) min possible value =1 and max possible value =8<br />
+                    99*1=99 (9 is the tens digit)<br />
+                    99*2=198 (9 is the tens digit)<br />
+                    99*3=297 (9 is the tens digit)<br />
+                    99*4=396 (9 is the tens digit)<br />
+                    99*5=495 (9 is the tens digit)<br />
+                    99*6=594 (9 is the tens digit)<br />
+                    99*7=693 (9 is the tens digit)<br />
+                    99*8=792 (9 is the tens digit)
+                p Because all the possible values of 99(a-c) have 9 as the tens place, it can be always true.
+                h2 MAGIC 3
+                p.
+                    Another miracle, see what happens when you multiple two magical numbers 9 and 7 together.<br />
+                    7*9=63<br />
+                    77*99=7623<br />
+                    777*999=776223<br />
+                    7777*9999=77762223
         include partials/footer.pug

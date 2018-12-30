@@ -7,7 +7,7 @@ html
     body(onload="getActive()")
         include partials/header.pug
         .container
-            #indexCarousel(class = "carousel slide" data-ride="carousel" data-interval="3500" data-pause="false")
+            #indexCarousel(class = "carousel slide" data-ride="carousel" data-pause="false")
                 ol.carousel-indicators
                     li(data-target="#indexCarousel" data-slide-to="0").active
                     li(data-target="#indexCarousel" data-slide-to="1")
@@ -20,11 +20,11 @@ html
                             h5 Do you know how to answer these two questions? I bet you don't know! That's why you have to view our website to broaden your knowledge bank.
                     .carousel-item
                         a(href="number11.html#question1"): img(src="images/carousel1.png" alt="Question 1: Fill 1-6 into the following triangle so that the sum of all three sides equal to 11.").w-100.d-block
-                        .carousel-caption
+                        .carousel-caption.d-none.d-md-block
                             h5 Press on the picture for the answer.
                     .carousel-item
                         a(href="number365-25.html#question2"): img(src="images/carousel2.png" alt="How many days are there from year 2001 to 2100?").w-100.d-block
-                        .carousel-caption
+                        .carousel-caption.d-none.d-md-block
                             h5 Press on the picture for the answer.
                 a.carousel-control-prev(href="#indexCarousel" role="button" data-slide="prev")
                     span.carousel-control-prev-icon(aria-hidden="true")
@@ -34,28 +34,28 @@ html
                     span.sr-only Next
         .container
             .row
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.my-4
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-12.my-4
                     .card.h-100
                         .card-header.bg-dark
                             h3.text-white 9
                         a(href="number9.html"): img.card-image-top(src="images/card9.jpg" alt="9").w-100
                         .card-body
                             p.card-text 9, may just be an ordinary number to you. However, it actually means longevity to Chinese people. Also, there are different miracles of 9. Therefore, why not learn the interesting facts of 9 together?
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.my-4
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-12.my-4
                     .card.h-100
                         .card-header.bg-dark
                             h3.text-white 11
                         a(href="number11.html"): img.card-image-top(src="images/card11.png" alt="11").w-100
                         .card-body
                             p.card-text 11, is well-known to be a prime number. However, not many of us know that there are a lot of ‘magic’ can be done from this number. For example, any power of 11 will ends with 1 in the units digit. Interesting, right?
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.my-4
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-12.my-4
                     .card.h-100
                         .card-header.bg-dark
                             h3.text-white 30
                         a(href="number30.html"): img.card-image-top(src="images/card30.jpg" alt="30").w-100
                         .card-body
                             p.card-text What are primordial numbers? What is so special about them? By using the number 30, we will answer all those questions, and show some interesting theorems about those mysterious primordial numbers!
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.my-4
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-12.my-4
                     .card.h-100
                         .card-header.bg-dark
                             h3.text-white 365.25
