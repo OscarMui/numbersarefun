@@ -1,10 +1,11 @@
 doctype html
+-var current_page="number11";
 html
     head
         title 11
         - var bg_color = "#BADA55";
         include partials/meta.pug
-    body(onload="getActive()")
+    body
         include partials/header.pug
         .container
             .jumbotron#main.pt-2.pb-1.mb-0

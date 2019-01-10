@@ -1,10 +1,11 @@
 doctype html
+-var current_page="abouts";
 html
     head
         title Abouts
         - var bg_color="#F9F0BB";
         include partials/meta.pug
-    body(onload="getActive()")
+    body
         include partials/header.pug
         .container
             .jumbotron#main.pt-2.pb-1.mb-0
@@ -12,7 +13,7 @@ html
                 h3 Background
                 p.lead.
                     The original website was made when I was in form 2 for my math project at school. Due to a lack of time, I decided to make it with Wix. However, currently, I have learnt some new web development techniques so I decided to rewrite the web again to test out what I have learnt.
-                a.lead(href="https://oscarmui1127.wixsite.com/numbersarefun") Original Website: https://oscarmui1127.wixsite.com/numbersarefun
+                a.lead(href="https://oscarmui1127.wixsite.com/numbersarefun" style="word-wrap: break-word;") Original Website: https://oscarmui1127.wixsite.com/numbersarefun
                 h3 Development details
                 p.
                     This project builds a simple static site, with only static assets, you can host it on any http server you want.<br />

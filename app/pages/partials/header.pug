@@ -6,10 +6,33 @@
             span.navbar-toggler-icon
         .collapse.navbar-collapse#navbar
             ul.navbar-nav.nav-fill.w-100
-                li.nav-item: a.nav-link#html_navbar0(href="index.html") HOME
-                li.nav-item: a.nav-link#html_navbar1(href="abouts.html") ABOUT
-                li.nav-item: a.nav-link#html_navbar2(href="number9.html") 9
-                li.nav-item: a.nav-link#html_navbar3(href="number11.html") 11
-                li.nav-item: a.nav-link#html_navbar4(href="number30.html") 30
-                li.nav-item: a.nav-link#html_navbar5(href="number365-25.html") 365.25
+                if(current_page=="index")
+                    li.nav-item: a.nav-link.active(href="index.html") HOME
+                else
+                    li.nav-item: a.nav-link(href="index.html") HOME
+                
+                if(current_page=="abouts")
+                    li.nav-item: a.nav-link.active(href="abouts.html") ABOUT
+                else
+                    li.nav-item: a.nav-link(href="abouts.html") ABOUT
+                
+                if(current_page=="number9")
+                    li.nav-item: a.nav-link.active(href="number9.html") 9
+                else
+                    li.nav-item: a.nav-link(href="number9.html") 9
+                
+                if(current_page=="number11")
+                    li.nav-item: a.nav-link.active(href="number11.html") 11
+                else
+                    li.nav-item: a.nav-link(href="number11.html") 11
+                
+                if(current_page=="number30")
+                    li.nav-item: a.nav-link.active(href="number30.html") 30
+                else
+                    li.nav-item: a.nav-link(href="number30.html") 30
+                
+                if(current_page=="number365-25")
+                    li.nav-item: a.nav-link.active(href="number365-25.html") 365.25
+                else
+                    li.nav-item: a.nav-link(href="number365-25.html") 365.25
                 

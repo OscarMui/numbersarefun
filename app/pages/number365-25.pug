@@ -1,10 +1,11 @@
 doctype html
+-var current_page="number365-25";
 html
     head
         title 365.25
         - var bg_color = "#F4C0AF";
         include partials/meta.pug
-    body(onload="getActive()")
+    body
         include partials/header.pug
         .container
             .jumbotron#main.pt-2.pb-1.mb-0

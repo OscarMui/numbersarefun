@@ -1,10 +1,11 @@
 doctype html
+-var current_page="index";
 html
     head
         title Numbers Are Fun
         - var bg_color="#BAE9FF";
         include partials/meta.pug
-    body(onload="getActive()")
+    body
         include partials/header.pug
         .container
             #indexCarousel(class = "carousel slide" data-ride="carousel" data-pause="false")
