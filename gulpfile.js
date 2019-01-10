@@ -64,7 +64,4 @@ gulp.task('imagecopy',function(){
   .pipe(gulp.dest("dist/images"));
 });
 
-//a combination of all tasks
-//gulp.task('build',function(){}
-
-gulp.task('tempbuild',gulp.series('js','pug','less','imagecopy'));
+gulp.task('build',gulp.series('js','pug','less','imagecopy'));
